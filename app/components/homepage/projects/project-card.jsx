@@ -10,7 +10,7 @@ function ProjectCard({ project, onOpen }) {
     <TiltCard
       maxTilt={6}
       scale={1.01}
-      className="w-full cursor-pointer group"
+      className="w-full group"
       onClick={() => {
         if (onOpen) onOpen(project);
       }}
@@ -22,12 +22,9 @@ function ProjectCard({ project, onOpen }) {
         {/* Card Header */}
         <div className="px-4 lg:px-8 py-3.5 lg:py-4 flex items-center justify-between border-b border-[#1b2c68]/80 bg-[#080d1c]">
           <div className="flex items-center space-x-2">
-            <div className="h-2.5 w-2.5 rounded-full bg-slate-700"></div>
-            <div className="h-2.5 w-2.5 rounded-full bg-slate-700"></div>
-            <div className="h-2.5 w-2.5 rounded-full bg-slate-700"></div>
-            <span className="ml-2 text-xs font-mono text-slate-400 uppercase tracking-widest">
-              Project #{project.id}
-            </span>
+            <div className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]"></div>
+            <div className="h-2.5 w-2.5 rounded-full bg-[#febc2e]"></div>
+            <div className="h-2.5 w-2.5 rounded-full bg-[#28c840]"></div>
           </div>
 
           <p className="text-center text-[#f43f5e] font-bold text-base lg:text-lg tracking-wide group-hover:text-white transition-colors">
@@ -38,12 +35,15 @@ function ProjectCard({ project, onOpen }) {
             type="button"
             onClick={(e) => {
               e.stopPropagation();
-              if (onOpen) onOpen(project);
+
+              if (project.githubUrl) {
+                window.open(project.githubUrl, "_blank", "noopener,noreferrer");
+              }
             }}
-            className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#f43f5e]/10 text-[#f43f5e] border border-[#f43f5e]/30 hover:bg-[#f43f5e] hover:text-white transition-all shadow-sm"
+            className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#f43f5e]/10 text-[#f43f5e] border border-[#f43f5e]/30 hover:bg-[#f43f5e] hover:text-white transition-all shadow-sm cursor-pointer"
           >
             <FiEye className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Inspect Live</span>
+            <span className="hidden sm:inline">View GitHub</span>
           </button>
         </div>
 
@@ -54,7 +54,7 @@ function ProjectCard({ project, onOpen }) {
               <span className="mr-2 text-[#38bdf8]">const</span>
               <span className="mr-2 text-white">project</span>
               <span className="mr-2 text-slate-400">=</span>
-              <span className="text-slate-400">{'{'}</span>
+              <span className="text-slate-400">{"{"}</span>
             </div>
             <div>
               <span className="ml-4 lg:ml-8 mr-2 text-slate-300">name:</span>
@@ -83,23 +83,15 @@ function ProjectCard({ project, onOpen }) {
             </div>
             <div className="ml-4 lg:ml-8 mr-2">
               <span className="text-slate-300">Description:</span>
-              <span className="text-[#38bdf8]">{' ' + project.description}</span>
+              <span className="text-[#38bdf8]">
+                {" " + project.description}
+              </span>
               <span className="text-slate-400">,</span>
             </div>
             <div>
               <span className="text-slate-400">{`};`}</span>
             </div>
           </code>
-
-          {/* Interactive footer bar */}
-          <div className="mt-4 pt-3 border-t border-white/5 flex items-center justify-between text-xs text-slate-400">
-            <span className="flex items-center gap-1.5 text-[#f43f5e]">
-              <FiCpu /> Click to launch interactive simulation
-            </span>
-            <span className="font-mono text-[11px] text-slate-400">
-              {project.tools.length} tech stacks
-            </span>
-          </div>
         </div>
       </div>
     </TiltCard>

@@ -3,10 +3,8 @@
 import { useState } from "react";
 import { projectsData } from "@/utils/data/projects-data";
 import ProjectCard from "./project-card";
-import ProjectModal from "@/app/components/cyber/project-modal";
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
 
   return (
     <div id="projects" className="relative z-10 my-12 lg:my-24">
@@ -35,7 +33,6 @@ const Projects = () => {
               <div className="box-border flex items-center justify-center rounded-xl shadow-[0_0_35px_0_rgba(0,0,0,0.4)] transition-all duration-300">
                 <ProjectCard
                   project={project}
-                  onOpen={(p) => setSelectedProject(p)}
                 />
               </div>
             </div>
@@ -43,13 +40,7 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* Interactive Project Preview Modal */}
-      {selectedProject && (
-        <ProjectModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
+     
     </div>
   );
 };

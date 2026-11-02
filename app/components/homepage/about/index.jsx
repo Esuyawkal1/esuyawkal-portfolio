@@ -19,7 +19,7 @@ function AboutSection() {
         {/* Left description */}
         <div className="order-2 lg:order-1 space-y-4">
           <h2 className="font-bold text-2xl lg:text-3xl text-white tracking-tight">
-            Crafting Digital Engineering Excellence
+            Crafting Digital Solutions with AI-Powered Development
           </h2>
 
           <div className="p-6 rounded-2xl bg-[#0d1224]/80 border border-[#1b2c68] shadow-[0_4px_25px_rgba(0,0,0,0.4)] backdrop-blur-xl">

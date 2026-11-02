@@ -7,14 +7,14 @@ export const experiences = [
   },
   {
     id: 2,
-    title: "CS Graduate at University of Gondar",
-    company: "Studying CS",
-    duration: "(2026)"
+    title: "CS Graduate",
+    company: "University of Gondar",
+    duration: "(2023 - Present)"
   },
   {
     id: 3,
     title: "Self Employed",
     company: "Code and build something in everyday.",
-    duration: "(Jan 2024 - Present)"
+    duration: "(sep 2024 - Present)"
   }
 ]
