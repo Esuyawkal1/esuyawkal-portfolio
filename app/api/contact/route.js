@@ -90,7 +90,7 @@ export async function POST(request) {
     // Send email
     const emailSuccess = await sendEmail(payload, message);
 
-    if (telegramSuccess && emailSuccess) {
+    if (telegramSuccess || emailSuccess) {
       return NextResponse.json({
         success: true,
         message: 'Message and email sent successfully!',
