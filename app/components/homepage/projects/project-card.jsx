@@ -40,10 +40,10 @@ function ProjectCard({ project, onOpen }) {
                 window.open(project.githubUrl, "_blank", "noopener,noreferrer");
               }
             }}
-            className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#f43f5e]/10 text-[#f43f5e] border border-[#f43f5e]/30 hover:bg-[#f43f5e] hover:text-white transition-all shadow-sm cursor-pointer"
+            className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold bg-[#f43f5e] text-white border border-[#f43f5e] hover:bg-[#f43f5e]/10 hover:text-[#f43f5e] transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer"
           >
-            <FiEye className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">View GitHub</span>
+            <FiEye className="w-4 h-4" />
+            <span className="hidden sm:inline">View Demo</span>
           </button>
         </div>
 

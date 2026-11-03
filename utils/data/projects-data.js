@@ -24,7 +24,7 @@ export const projectsData = [
     'AI-Assisted Development'
   ],
   role: 'Full Stack Developer',
-        githubUrl:'https://github.com/esuyawkal1'
+        githubUrl:'https://dreammore-platform.vercel.app/'
     },
     {
         id: 3,
