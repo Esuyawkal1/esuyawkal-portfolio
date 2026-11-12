@@ -1,11 +1,25 @@
 export const projectsData = [
     {
         id: 1,
-        name: 'AI Powered Financial App',
-        description: "Me and my team built an AI-powered financial mobile application. I have developed API using Express, Typescript, OpenAI, AWS, and MongoDB. Used OTP via AWS SES, Google, and Facebook for the authentication system. Built AI assistants using OpenAI's latest model and trained using our dataset. Voice messages are converted to text using AWS Transcribe. The app fetches data from Google Sheets and generates a PDF term sheet, sent via AWS SES.",
-        tools: ['Express', 'MongoDB', 'OpenAI API', 'AWS SES', 'AWS S3', 'Node Mailer', 'Joi', 'Puppeteer', 'EC2', 'PM2', 'Nginx'],
-        role: 'Backend Developer',
-        githubUrl:'https://github.com/esuyawkal1'
+        name: 'SPort market e-commerce',
+  Description: 'Led the full-stack development of an AI-driven financial web platform. Developed an intuitive, accessible user interface featuring real-time financial data visualization, voice commands, and conversational AI chat assistants. Engineered backend micro-services and secure REST APIs using Node.js, Express, and MongoDB. Implemented automated term-sheet generation with Puppeteer, Google Sheets API synchronization, and multi-factor authentication with automated email delivery via AWS SES.',
+   tools: [
+    'React',
+    'Vite',
+    'Tailwind CSS',
+    'Node.js',
+    'Express',
+    'MongoDB',
+    'Mongoose',
+    'AWS S3',
+    'Multer',
+    'Docker',
+    'Nginx',
+    'JWT',
+    'pnpm Workspaces',
+  ],
+  role: 'fullstack Developer',
+        githubUrl:'https://sport-e-commerce-lilac.vercel.app/'
     },
     {
     id: 2,
