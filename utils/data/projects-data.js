@@ -2,7 +2,8 @@ export const projectsData = [
     {
         id: 1,
         name: 'SPort market e-commerce',
-  Description: 'Led the full-stack development of an AI-driven financial web platform. Developed an intuitive, accessible user interface featuring real-time financial data visualization, voice commands, and conversational AI chat assistants. Engineered backend micro-services and secure REST APIs using Node.js, Express, and MongoDB. Implemented automated term-sheet generation with Puppeteer, Google Sheets API synchronization, and multi-factor authentication with automated email delivery via AWS SES.',
+  Description: 
+'Architected and built a multi-vendor sports equipment and gear marketplace across a pnpm monorepo. On the frontend, developed a responsive, feature-based SPA using React, Vite, and Tailwind CSS, featuring catalog filtering, shopping cart management, vendor product management, and dynamic checkout flows. On the backend, engineered a native Node.js ESM Express API adhering to Clean Architecture principles (Controllers, Services, Models, Routes) with MongoDB and Mongoose. Implemented role-based access control (RBAC) using JWT for customers, vendors, and admins, alongside a dedicated media microservice leveraging AWS S3, Multer, and Sharp for image optimization and presigned uploads.',
    tools: [
     'React',
     'Vite',
